@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/86fde6df9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>MixIt</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container-flex">
+        <div class="logo">
+          <img id="header-img" class="logo-img" src="/images/Logo symbol.png" alt="" />
+          <h1>Mix.It</h1>
+        </div>
+        <nav id="nav-bar">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#how">How It Works?</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="btn__sign-up" onclick="openForm()" href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+        <a class="sign-up-mb" onclick="openForm()" href="#">Sign Up</a>
+      <div class="mb-logo-sign-sm">
+        <img id="header-img" class="logo-img-mb" src="/images/Logo symbol.png" alt="" />
+        <a class="sign-up-mb-sm" onclick="openForm()" href="#">Sign Up</a>
+      </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <div id="main" class="container__main">
+
+    <!-- form -->  
+    <div id="form-overlay" class="remove">
+      <div id="form-container" class="animate__animated animate__fadeIn form__cta">
+        <form class="animate__animated animate__backInDown"
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+          method="GET"
+        >
+          <label for="email">Email sign up</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email here..."
+          />
+        <div class="btn-form-ct">
+          <input class="btn-form" id="submit" type="submit"/>
+          <button class="btn-form" id="close" onclick="closeForm()" type="button">Cancel</button>
+        </div>
+        </form>
+      </div>
+    </div>
+
+      <!-- hero -->
+      <section id="hero" class="hero">
+        <div class="container__hero">
+        <div id="removeMe">          
+          <div class="title">
+            <h1 class="top centered">Master Your Music,</h1>
+            <h1 class="expand centered">Instantly</h1>
+          </div>
+          <div class="description">
+            <p class="centered">
+              An online mastering engine that gives you studio quality mixes
+              with out the wait
+            </p>
+          </div>
+          <div class="direction">
+            <p class="centered">
+              <i class="fas fa-arrow-down"></i>Upload your first track now
+              free<i class="fas fa-arrow-down"></i>
+            </p>
+          </div>
+          <!-- animates only -->
+          <div onclick="openForm()"  class="btn__upload">            
+            <a class="btn-upload" href="#"><i class="fas fa-spinner fa-spin hide"></i><i class="fas fa-upload hover-effect"></i></a>
+          </div>
+
+          <div class="example__nav">
+            <a href="#how"><i class="fas fa-angle-double-down"></i></a>
+          </div>
+        </div>
+
+
+      </div>
+      </section>
+      <!-- how -->
+      <section id="how" class="how">
+        <div class="title__how centered">
+          <h2>Studio quality sound in seconds</h2>
+        </div>
+        <div class="container__how">
+
+          <div class="video">
+            <div class="video-title centered">             
+              <h3><i class="fas fa-quote-left fa"></i>All these faders in one click of a button<i class="fas fa-quote-right"></i></h3>             
+            </div>
+
+            <iframe id="video" width="450" height="250" src="https://www.youtube.com/embed/fINcPO4p1O0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="icons">
+            <div class="icon_container">
+              <i class="fas fa-music fa-3x outside"></i>
+              <i class="fas fa-circle fa-6x inside"></i>
+            </div>
+
+            <div class="icon_container">
+              <i class="fas fa-sliders-h fa-3x outside_2"></i>
+              <i class="fas fa-circle fa-6x inside"></i>
+            </div>
+
+            <div class="icon_container">
+              <i class="fas fa-volume-up fa-3x outside"></i>
+              <i class="fas fa-circle fa-6x inside"></i>
+            </div>
+          </div>
+          <div class="steps__container">
+            <ul class="steps">
+              <li class="steps_list">
+
+                <h2>1. Upload Your Song</h2>
+                <p>Upload your MP3, AIFF, or WAV file by clicking the button at the top of the home page. The song will then be sent to our online server and prepared for mastering.</p>
+              </li>
+
+              <li class="steps_list">
+
+                <h2>2. Analyze and Master</h2>
+                <p>Our cutting edge mastering application will analyze your audio, and pick the tools it needs to make your track sound louder, crisper, and more full of life than your original.</p>
+              </li>
+
+              <li class="steps_list">
+                <h2>3. Preview and Download</h2>
+                <p>Compare the Mix.It audio master to your original file for free, and download it as a WAV or MP3 with the click of a button. With a subscription plan, you can download unlimited masters per month.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- features -->
+      <section id="features" class="feature">
+        
+        <div class="title__mb centered">
+          <h1>
+            What can <span><i class="fas fa-sliders-h"></i></span>Mix.It do?
+          </h1>
+        </div>
+        <h2 class="explained__mb">
+          Some Of Our Features
+        </h2>
+
+        <div class="container__features">
+
+          <div class="title__features centered">
+            <h1>
+              What can <span><i class="fas fa-sliders-h"></i></span>Mix.It do?
+            </h1>
+          </div>
+          <h2 class="explained centered">
+            Some Of Our Features
+          </h2>
+          <div class="mb-tb__icons">
+            <i class="mb-tb fas fa-filter"></i>
+            <i class="mb-tb fas fa-file-import"></i>
+            <i class="mb-tb fab fa-soundcloud"></i>
+          </div>
+          <div class="features">
+          <!-- mobile icons -->
+
+            <div class="card__feature">
+              <h2 class="centered">Choose presets based on genre</h2>
+              <p class="centered">hundreds of presets for every genre from hip-hop to country</p>
+              <i class="mb-hide fas fa-filter fa-4x"></i>
+            </div>
+
+            <div class="card__feature">
+              <h2 class="centered">Download and upload multiple files at once</h2>
+              <p class="centered">
+                Do you have EP or Album that needs to be mastered? you can
+                upload and download in batches
+              </p>
+              <i class="mb-hide fas fa-file-import fa-4x"></i>
+            </div>
+
+            <div class="card__feature">
+              <h2 class="centered">Share instantly to SoundCloud</h2>
+              <p class="centered">
+                You can upload and share directly to SoundCloud
+              </p>
+              <i class="mb-hide fab fa-soundcloud fa-4x"></i>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- pricing -->
+      <section id="pricing" class="pricing">
+        <div class="container__pricing">
+          <div class="prices">
+            <div class="card__price">
+              <h2>Yearly</h2>
+              <p>$12<span><small>/mo</small></span></p>
+            <p class="btm-description">$120 payment billed yearly</p>
+              <div class="btn__buynow">
+                <a class="btn-buynow" onclick="openForm()" href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card__price">
+              <h2>Yearly (monthly)</h2>
+              <p>$15<span><small>/mo</small></span></p>
+              <p class="btm-description">1 year commitment</p>
+              <div class="btn__buynow">
+                <a class="btn-buynow" onclick="openForm()" href="#">Buy Now</a>
+              </div>
+            </div>
+            <div class="card__price">
+              <h2>Monthly</h2>
+              <p>$20<span><small>/mo</small></span></p>
+              <p class="btm-description">$20 billed once monthly</p>
+              <a class="btn-buynow" onclick="openForm()" href="#">Buy Now</a>
+            </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-flex">
+        <nav class="footer-nav">
+          <ul class="f-nav-list">
+            <li><a class="nav-link" onclick="openForm()" href="#">Upload</a></li>  
+            <li><a class="nav-link" href="#how">How It Works?</a></li>
+          </ul>
+        </nav>
+    </div>
+    </footer>
+    <script src="/form.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>

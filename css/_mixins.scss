@@ -1,0 +1,43 @@
+// media queries
+
+// phone
+$mb-sm: 360px;
+$mb-md: 400px;
+
+
+// tablet
+$tablet-view: 762px;
+
+// desktop
+$desktop: 900px;
+
+
+// breakpoints
+
+@mixin phone-lg {
+  @media (max-width: #{$tablet-view}) {
+    @content;
+  }
+}
+
+
+@mixin phone-md {
+  @media (max-width: #{$mb-lg}) {
+    @content;
+  }
+}
+
+@mixin phone-sm {
+  @media (max-width: #{$mb-sm})  {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+
